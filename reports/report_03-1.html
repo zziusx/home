@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>과제3</title>
+</head>
+<body>
+<script>
+    var N;
+    var n2 = prompt("2진수를 입력하세요.","");
+    n = parseInt(n2, 2);
+
+    if (n < 10)
+        N = n;
+    else if (n == 10)
+        N = "A";
+    else if (n == 11)
+        N = "B";
+    else if (n == 12)
+        N = "C";
+    else if (n == 13)
+        N = "D";
+    else if (n == 14)
+        N = "E";
+    else
+        N = "F";
+    document.writeln("2진수 " + n2 + "은 16진수로 변환하면 " + N + "입니다.")
+</script>
+</body>
+</html>

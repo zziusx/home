@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문제2</title>
+</head>
+<body>
+<script>
+    var h = prompt("파스칼 삼각형의 높이: ","");
+    h = parseInt(h)
+    var row = [];
+
+    row[0] = 1;
+    row[1][0] = 1;
+    row[1][1] = 1;
+
+    for (i=0; i<h; i++){
+        var a = [];
+        for (j=0; j <=i; j++) {
+            var pa = [];
+            if ( i===j || i===h) {
+                pa.append(1);
+                document.writeln(pa + " ");
+            }
+            else {
+                pa.append(row[i-1][j] + row[i-1][j]);
+                document.writeln(pa + " ");
+            }
+            a.append(pa)
+            document.writeln(a)
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>폼</title>
+</head>
+<body>
+<form>
+    이름: <input type="text" name="입력요소이름" maxlength="문자수" size="입력창 크기" value="초기텍스트"><br>
+    암호: <input type="password" name="입력요소이름" maxlength="문자수" size="입력창 크기" value="초기텍스트"><br>
+    자기소개서: <textarea name="입력요소이름" cols="열의 수" rows="행의 수">이곳에 자기소개서 작성</textarea><br>
+    출신국: <input type="text" list="country">
+    <datalist id="country">
+        <option value="대한민국"></option>
+        <option value="중국"></option>
+    </datalist><br>
+    먹고 싶은 것을 한 가지 선택: <br>
+        <input type="radio" name="food" value="짜장면">짜장면
+        <input type="radio" name="food" value="짬뽕" checked>짬뽕
+        <input type="radio" name="food" value="탕수육">탕수육 <br>
+    보유 IT 기술: <br>
+        <input type="checkbox" value="Python" checked>Python
+        <input type="checkbox" value="Java">Java
+        <input type="checkbox" value="C/C++">C/C++ <br>
+    먹고 싶은 것을 한 가지 선택: <br>
+        <select name="food">
+            <option value="1">짜장면</option>
+            <option value="2" selected>짬뽕</option>
+            <option value="3">탕수육</option>
+        </select>
+</form>
+</body>
+</html>
