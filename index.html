@@ -37,9 +37,12 @@
 </head>
 
 <body>
-
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class="fixed-column header-transparent">
+
     <div class="container-fluid d-flex align-items-center justify-content-between position-relative">
 
       <div class="logo">
@@ -50,8 +53,20 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#degree">Degree</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li class="dropdown"><a href="#">Portfolio<span></span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>실습</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="lab/lab_포지셔닝.html">포지셔닝 실습</a></li>
+                  <li><a href="lab/lab_Array.html">Array 실습</a></li>
+                  <li><a href="lab/lab_DOM객체다루기.html">DOM객체 실습</a></li>
+                  <li><a href="lab/lab_객체리터럴객체.html">리터럴객체 실습</a></li>
+                  <li><a href="lab/lab_표꾸미기.html">표꾸미기 실습</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="#hobby">hobby</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -64,8 +79,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-      <h1>Hi </h1>
-      <h2>I am Ji Woo</h2>
+      <h1>Hi!</h1>
+      <h2>I am Kim Ji Woo</h2>
+
       <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -75,23 +91,31 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
+        <h2>Let me introduce my basic information.</h2>
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
             <div class="content">
-              <h3>Let me introduce my basic information.</h3>
+              <img src="project/Squadfree/assets/img/me.JPG" class="img-fluid">
             </div>
           </div>
           <div class="col-xl-7 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-box-fill"></i>
+                  <i class="bi bi-chat-square"></i>
                   <h4><strong>name:</strong> <span>Kim Jiwoo</span></h4>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-balloon"></i>
                   <h4><strong>birthday:</strong> <span>2002-12-13</span></h4>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-chat-square-dots"></i>
+                  <h4><strong>age:</strong> <span>21</span></h4>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-chat-square-dots"></i>
+                  <h4><strong>grade:</strong> <span>2</span></h4>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-geo-alt"></i>
@@ -99,7 +123,15 @@
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-phone"></i>
-                  <h4><strong>Phone-number</strong> <span>010-3311-****</span></h4>
+                  <h4><strong>Phone-number:</strong> <span>010-3311-****</span></h4>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h4><strong>E-mail:</strong> <span>cpkingkjw@naver.com</span></h4>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-egg-fried"></i>
+                  <h4><strong>mbti:</strong> <span>istj</span></h4>
                 </div>
               </div>
             </div><!-- End .content-->
@@ -110,44 +142,44 @@
     </section><!-- End About Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="degree" class="services">
+    <section id="services" class="services">
       <div class="container">
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Degrees</h2>
+          <h2>Services</h2>
           <p>Let introduce my educational background.</p>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bi bi-flag"></i></div>
+              <h4 class="title">2015</h4>
+              <p class="description">I graduated from Hoseong Elementary School in 2015.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="bi bi-flag"></i></div>
+              <h4 class="title">2018</h4>
+              <p class="description">I graduated from Hosung Middle School in 2018.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bi bi-flag"></i></div>
+              <h4 class="title">2021</h4>
+              <p class="description">I graduated from Yangmyeong Girls' High School in 2021.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <div class="icon"><i class="bi bi-flag"></i></div>
+              <h4 class="title">2021~</h4>
+              <p class="description">I have been attending Dongduk Women's University since 2021.</p>
             </div>
           </div>
 
@@ -157,130 +189,13 @@
     </section><!-- End Services Section -->
 
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
+    <section id="hobby" class="testimonials section-bg">
+      <div class="container-fluid">
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Hobby</h2>
+          <p>Let me introduce my hobby.</p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -289,65 +204,38 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                 My first hobby is a hobby that is older than 10 years.
+                  I have been interested in baseball since the first grade of elementary school,
+                  so I have been watching baseball as a fan of LG Twins.
                 </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <img src="project/Squadfree/assets/img/hobby1.jpeg" class="testimonial-img" alt="">
+                <h3>watching baseball</h3>
+                <h4>favorite</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  My second hobby is looking at clothes and shopping.
+                  I like to experience various clothes
+                  because I am usually interested in fashion.
                 </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <img src="project/Squadfree/assets/img/hobby2.jpeg" class="testimonial-img" alt="">
+                <h3>fashion</h3>
+                <h4>love it</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  My third hobby is looking for good restaurants.
+                  I like to go to pretty cafes and get refreshed.
                 </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <img src="project/Squadfree/assets/img/hobby3.jpeg" class="testimonial-img" alt="">
+                <h3>visiting restaurants</h3>
+                <h4>happiness</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -358,69 +246,6 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="150">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
@@ -428,31 +253,31 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>If you want to contact me, please refer to the following.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <h3>Location:</h3>
+              <p>서울특별시 성북구 화랑로 13길 60</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <h3>Email:</h3>
+              <p>cpkingkjw@naver.com</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <h3>Call:</h3>
+              <p>010-3311-****</p>
             </div>
           </div>
 
@@ -502,51 +327,39 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4">
             <div class="footer-info">
-              <h3>Squadfree</h3>
-              <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>
+              <h3>Jiwoo Kim</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                Anyang, Gyeonggi-do<br>
+                서울특별시 성북구 화랑로 13길 60<br><br>
+                <strong>Phone:</strong> 010-3311-****<br>
+                <strong>Email:</strong> cpkingkjw@naver.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.instagram.com/zziusx/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://github.com/zziusx" class="github"><i class="bi bi-github"></i></a>
+                <a href="mailto:cpkingkjw@naver.com" class="envelope"><i class="bi bi-envelope"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-4 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hobby">hobby</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">contact</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <div class="col-lg-4 footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Please feel free to write what you want to say.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
