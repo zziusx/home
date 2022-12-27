@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자 정의 객체</title>
+</head>
+<body>
+<script>
+  var company = new Object();
+  company.name = "Microsoft";
+  company.ceo = new Object();
+  company.ceo.name = "Bill Gates";
+  company.ceo.fav_color = "blue";
+
+  document.write("회사: " + company + "<br>");
+  document.write("회사이름: " + company.name + "<br>");
+  document.write("회사 ceo: " + company.ceo + "<br>");
+  document.write("회사 ceo 이름: " + company.ceo.name);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>매개변수 기본값 처리</title>
+  <script>
+    function order_pizza(topping) {
+      if (topping === undefined) {
+        topping = "Cheese";
+      }
+      document.writeln("<br>Ordering pizza with topping " + topping);
+    }
+  </script>
+</head>
+<body>
+<h3>매개변수 기본값 처리</h3>
+<hr>
+<script>
+  order_pizza("Mozzarella & Basil");
+  order_pizza();
+</script>
+</body>
+</html>
